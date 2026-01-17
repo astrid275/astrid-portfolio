@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrid Restu - Data Analytics Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+        
+        .contact-item a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+        
+        section {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #1e3c72;
+            border-bottom: 2px solid #1e3c72;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        h3 {
+            color: #2a5298;
+            margin: 15px 0 10px 0;
+        }
+        
+        .project {
+            border-left: 4px solid #2a5298;
+            padding-left: 20px;
+            margin: 25px 0;
+        }
+        
+        .project-highlight {
+            background: #eef5ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .skill-category {
+            background: #f0f7ff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        ul {
+            list-style-position: inside;
+            margin: 10px 0;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #2a5298;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #1e3c72;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Astrid Restu</h1>
+        <div class="subtitle">Data Analytics Portfolio | Transitioning from Commercial Leadership to Data Science</div>
+        <div class="contact-info">
+            <div class="contact-item">
+                📧 <a href="mailto:astrid275@gmail.com">astrid275@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                📱 <a href="tel:+4915561083771">+49 155 6108 3771</a>
+            </div>
+            <div class="contact-item">
+                🔗 <a href="https://linkedin.com/in/astrid-restu-key-accounts-customer-success-team-lead-buyer-commercial-manager" target="_blank">LinkedIn Profile</a>
+            </div>
+            <div class="contact-item">
+                💻 <a href="https://github.com/astrid275" target="_blank">GitHub Portfolio</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Top-ranked Key Account Manager and Customer Success professional transitioning into Data Analytics. Over ten years of commercial experience delivering customer-centric solutions, now combining business acumen with technical data skills.</p>
+        <p>Recently completed Ironhack Data Analytics Bootcamp (Berlin) — mastering Python, SQL, Tableau, and Machine Learning fundamentals to transform raw data into actionable insights. Passionate about sports analytics, data storytelling, and creating impact through data-driven decisions.</p>
+    </section>
+
+    <section id="featured-project">
+        <h2>Featured Project: Premier League Analytics</h2>
+        <div class="project-highlight">
+            <h3>Data-Driven Decision Making in the English Premier League</h3>
+            <p><strong>Tools Used:</strong> Python (Pandas, NumPy, Scikit-learn), SQL, Tableau, Machine Learning</p>
+            <p><strong>Objective:</strong> Analyze six seasons of Premier League data to identify team performance trends and build predictive models for match outcomes.</p>
+            
+            <h4>Key Achievements:</h4>
+            <ul>
+                <li>Conducted comprehensive Exploratory Data Analysis (EDA) on team performance metrics across six seasons</li>
+                <li>Built and compared multiple Machine Learning models to predict match outcomes with 72% accuracy</li>
+                <li>Created interactive Tableau dashboards to visualize team trends, tactical patterns, and performance metrics</li>
+                <li>Developed a framework for translating statistical insights into actionable football intelligence</li>
+            </ul>
+            
+            <a href="https://github.com/astrid275" class="btn" target="_blank">View Project on GitHub</a>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Other Data Analytics Projects</h2>
+        
+        <div class="project">
+            <h3>Spotify Song Recommendation System</h3>
+            <p><strong>Tools:</strong> Python, Streamlit, Pandas, Scikit-learn</p>
+            <p>Built a content-based recommendation system using audio features and metadata from 170,000+ songs.</p>
+        </div>
+        
+        <div class="project">
+            <h3>Formula 1 Analysis & BI Dashboards</h3>
+            <p><strong>Tools:</strong> Tableau, SQL, Data Visualization</p>
+            <p>Created interactive BI dashboards analyzing driver performance, team strategies, and race outcomes across multiple seasons.</p>
+        </div>
+        
+        <div class="project">
+            <h3>Customer Segmentation SQL Project</h3>
+            <p><strong>Tools:</strong> SQL, Database Management, Customer Analytics</p>
+            <p>Developed customer segmentation models using SQL queries to identify high-value customer groups and optimization opportunities.</p>
+        </div>
+        
+        <a href="https://github.com/astrid275" class="btn" target="_blank">View All Projects on GitHub</a>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Programming & Analytics</h3>
+                <ul>
+                    <li>Python (Pandas, NumPy, Matplotlib, Seaborn)</li>
+                    <li>SQL & Database Management</li>
+                    <li>Data Wrangling & Cleaning</li>
+                    <li>Statistical Analysis</li>
+                    <li>A/B Testing & Hypothesis Testing</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Machine Learning</h3>
+                <ul>
+                    <li>Supervised Learning (Regression, Classification)</li>
+                    <li>Unsupervised Learning (Clustering)</li>
+                    <li>Model Evaluation & Tuning</li>
+                    <li>Scikit-learn</li>
+                    <li>Feature Engineering</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Data Visualization & Tools</h3>
+                <ul>
+                    <li>Tableau & Dashboard Design</li>
+                    <li>Data Storytelling</li>
+                    <li>Streamlit Applications</li>
+                    <li>Git & GitHub</li>
+                    <li>Jira & Agile Methodology</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Commercial & Business</h3>
+                <ul>
+                    <li>Key Account Management</li>
+                    <li>Customer Success Strategy</li>
+                    <li>Business Development</li>
+                    <li>KPI Tracking & Reporting</li>
+                    <li>Stakeholder Communication</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact & Resources</h2>
+        <p>I'm currently seeking Data Analyst, Business Intelligence, or Sports Analytics positions where I can apply my unique combination of commercial experience and technical data skills.</p>
+        
+        <div style="margin-top: 20px;">
+            <a href="mailto:astrid275@gmail.com" class="btn">📧 Email Me</a>
+            <a href="https://linkedin.com/in/astrid-restu-key-accounts-customer-success-team-lead-buyer-commercial-manager" class="btn" target="_blank" style="background: #0077b5;">🔗 LinkedIn</a>
+            <a href="https://github.com/astrid275" class="btn" target="_blank" style="background: #333;">💻 GitHub</a>
+        </div>
+        
+        <p style="margin-top: 20px;"><strong>Download:</strong> <a href="#">My CV/Resume (PDF)</a> - <em>You can upload your CV file and update this link</em></p>
+    </section>
+
+    <footer>
+        <p>© 2026 Astrid Restu | Data Analytics Portfolio | Berlin, Germany</p>
+        <p>This portfolio is hosted on GitHub Pages and updated regularly with new projects.</p>
+    </footer>
+</body>
+</html>
